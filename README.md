@@ -1,46 +1,23 @@
-Task 1: News Topic Classifier Using BERT
-📝 Objective
-The primary goal of this task is to fine-tune a state-of-the-art Transformer model to accurately classify news headlines into four distinct categories: World, Sports, Business, and Sci/Tech. This project demonstrates the application of Transfer Learning in Natural Language Processing (NLP) to handle real-world text classification.
-+1
+**Task 1: News Topic Classifier Using BERT**
+**Objective**
+The objective of this project is to fine-tune a pre-trained BERT (Bidirectional Encoder Representations from Transformers) model to classify news headlines into four distinct categories: World, Sports, Business, and Sci/Tech. This task demonstrates the application of state-of-the-art NLP techniques for automated content categorization using the AG News Dataset.
 
-🛠️ Methodology & Approach
-To achieve the objectives outlined by Developers Hub Corporation, the following approach was taken:
-+1
+**Methodology / Approach**
+To fulfill the task requirements, the following systematic approach was implemented:
+**. Data Preprocessing:** The AG News dataset was loaded and tokenized using the BertTokenizer from the bert-base-uncased checkpoint. Sequences were padded and truncated to a maximum length of 128 tokens for optimal performance.
+**. Model Training:** I fine-tuned the BertForSequenceClassification model using the Hugging Face Trainer API. The training was conducted for 3 epochs with a learning rate of 2e-5 and a weight decay of 0.01.
+**. Evaluation:** The model's performance was monitored at each epoch using Accuracy and Weighted F1-score to ensure robust classification across all four classes.
+**. Deployment:** A live, interactive web interface was developed using Gradio, allowing users to input headlines and receive real-time topic predictions.
 
+**Key Results & Observations**
+The model achieved high performance, significantly exceeding the standard requirements for text classification:
+**Final Accuracy: ~94.7%.**
+**Weighted F1-Score: ~0.947.**
+**Observations: The model demonstrates exceptional precision in distinguishing between "Sports" and "World" news. A minor overlap exists between "Business" and "Sci/Tech," which is consistent with real-world news where technology and business sectors frequently intersect.**
 
-Dataset Acquisition: Utilized the AG News Dataset from Hugging Face, consisting of 120,000 training samples and 7,600 test samples.
-
-
-Preprocessing: * Tokenized text using the BertTokenizer from the bert-base-uncased checkpoint.
-
-Applied padding and truncation to a max length of 128 tokens for computational efficiency.
-
-
-Model Selection: Fine-tuned the bert-base-uncased model using the Hugging Face Trainer API.
-
-Training Configuration:
-
-Learning Rate: 2e-5
-
-Epochs: 3
-
-Batch Size: 16
-
-Weight Decay: 0.01
-
-
-Evaluation: Monitored performance using Accuracy and Weighted F1-score to ensure balanced classification across all topics.
-+1
-
-
-Deployment: Created an interactive web interface using Gradio to allow for real-time inference on custom news headlines.
-+1
-
-📊 Key Results & Observations
-The model showed strong convergence and high predictive power:
-
-Final Accuracy: ~94.7% (on the test set).
-
-Weighted F1-Score: ~0.947.
-
-Insights: The model performs exceptionally well on "Sports" and "World" categories. There is a slight, expected overlap between "Business" and "Sci/Tech" due to the shared vocabulary in technical-business reporting.
+**Technologies Used**
+**.Python**
+**.Hugging Face Transformers & Datasets** 
+**.PyTorch**
+**.Gradio (for deployment)** 
+**.Scikit-learn (for evaluation metrics)** 
