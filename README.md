@@ -1,11 +1,11 @@
 **Task 1: News Topic Classifier Using BERT**
 
-**Objective**
+**1. Objective**
 
 The objective of this project is to fine-tune a pre-trained BERT (Bidirectional Encoder Representations from Transformers) model to classify news headlines into four distinct categories: World, Sports, Business, and Sci/Tech. This task demonstrates the application of state-of-the-art NLP techniques for automated content categorization using the AG News Dataset.
 
 
-**Methodology / Approach**
+**2. Methodology / Approach**
 
 To fulfill the task requirements, the following systematic approach was implemented:
 
@@ -18,7 +18,8 @@ To fulfill the task requirements, the following systematic approach was implemen
 **. Deployment:** A live, interactive web interface was developed using Gradio, allowing users to input headlines and receive real-time topic predictions.
 
 
-**Key Results & Observations**
+
+**3. Key Results & Observations**
 
 The model achieved high performance, significantly exceeding the standard requirements for text classification:
 
@@ -29,7 +30,8 @@ The model achieved high performance, significantly exceeding the standard requir
 **Observations: The model demonstrates exceptional precision in distinguishing between "Sports" and "World" news. A minor overlap exists between "Business" and "Sci/Tech," which is consistent with real-world news where technology and business sectors frequently intersect.**
 
 
-**Technologies Used**
+
+**4. Technologies Used**
 
 **.Python**
 
